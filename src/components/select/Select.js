@@ -1,22 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Select from 'react-select';
 
 import './select.css'
 
-const options = [
-  { value: 'chocolate', label: 'Chocolate' },
-  { value: 'strawberry', label: 'Strawberry' },
-  { value: 'vanilla', label: 'Vanilla' },
-];
-
-export default function SelectContainer() {
-  const [selectedOption, setSelectedOption] = useState(null);
+export default function SelectContainer({options, onChange}) {
 
   return (
     <div className="selectContainer">
       <Select
-        defaultValue={selectedOption}
-        onChange={setSelectedOption}
+        placeholder={options[0].value}
+        onChange={(e)=>onChange(e)}
         options={options}
       />
     </div>

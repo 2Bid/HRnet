@@ -8,8 +8,8 @@ export default function EmployeList() {
   return (
     <div className='employeeList'>
         <h1>Current Employees</h1>
-        <GridTableContainer/>
         <Link to="/" className='home-link'>Home page</Link>
+        <GridTableContainer/>
     </div>
   )
 }
