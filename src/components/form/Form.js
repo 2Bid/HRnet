@@ -53,10 +53,25 @@ export default function Form() {
 
   const [isFormSubmit, setIsFormSubmit]  = useState(false)
 
+  // id begin at 2, because first is in the exemple
+  const [idCounter, setIdCounter] = useState(2)
+
   const handleFormSubmit = (e) => {
     e.preventDefault()
     setIsFormSubmit(true)
-    dispatch(createEmployee([firstName, lastName, dateBirth, startDate, street, city, state, postalCode, department]))
+    dispatch(createEmployee({
+      id : idCounter,
+      firstname : firstName,
+      lastname : lastName,
+      dateBirth : dateBirth,
+      startDate : startDate,
+      street : street,
+      city : city,
+      state : state,
+      zipcode : postalCode,
+      department : department
+    }))
+    setIdCounter(idCounter + 1)
   }
 
   const handleChangeState = (e) => {

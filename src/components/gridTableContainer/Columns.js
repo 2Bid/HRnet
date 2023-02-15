@@ -16,7 +16,7 @@ export const columns = [
   },
   {
     id: 4,
-    field: "departmtn",
+    field: "department",
     label: "Department"
   },
   {

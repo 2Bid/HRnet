@@ -1,5 +1,4 @@
 import React from 'react'
-
 import './modal.css'
 
 export default function Modal({openModal}) {
@@ -9,6 +8,7 @@ export default function Modal({openModal}) {
         <span className='modal__close' onClick={()=>{openModal(false)}}></span>
         <p>Employee Created!</p>
       </div>
+      
       <div className='blocker'></div>
     </>
   )
