@@ -86,41 +86,42 @@ export default function Form() {
   return (
     <>
       <form id="create-employee" className='formEmployee-create'>
-          <label htmlFor="first-name">First Name</label>
-          <input type="text" id="first-name" value={firstName} onChange={(e)=>handleChangeFirstName(e)}/>
+        <label htmlFor="first-name">First Name</label>
+        <input type="text" id="first-name" value={firstName} onChange={(e)=>handleChangeFirstName(e)}/>
 
-          <label htmlFor="last-name">Last Name</label>
-          <input type="text" id="last-name" value={lastName} onChange={(e)=>handleChangeLastName(e)}/>
+        <label htmlFor="last-name">Last Name</label>
+        <input type="text" id="last-name" value={lastName} onChange={(e)=>handleChangeLastName(e)}/>
 
-          <label htmlFor="date-of-birth">Date of Birth</label>
-          <InputDatepickerContainer onChange={(e)=>handleChangeDateBirth(e)}/>
+        <label htmlFor="date-of-birth">Date of Birth</label>
+        <InputDatepickerContainer onChange={(e)=>handleChangeDateBirth(e)}/>
 
-          <label htmlFor="start-date">Start Date</label>
-          <InputDatepickerContainer onChange={(e)=>handleChangeStartDate(e)}/>
+        <label htmlFor="start-date">Start Date</label>
+        <InputDatepickerContainer onChange={(e)=>handleChangeStartDate(e)}/>
 
-          <div className="address">
-              <legend>Address</legend>
+        <div className="address">
+          <legend>Address</legend>
 
-              <label htmlFor="street">Street</label>
-              <input id="street" type="text" value={street} onChange={(e)=>handleChangeStreet(e)} />
+          <label htmlFor="street">Street</label>
+          <input id="street" type="text" value={street} onChange={(e)=>handleChangeStreet(e)} />
 
-              <label htmlFor="city">City</label>
-              <input id="city" type="text" value={city} onChange={(e)=>handleChangeCity(e)}/>
+          <label htmlFor="city">City</label>
+          <input id="city" type="text" value={city} onChange={(e)=>handleChangeCity(e)}/>
 
-              <label htmlFor="state-button">State</label>
-              <SelectContainer options={states} onChange={(e)=>{handleChangeState(e)}}/>
-              
-              <label htmlFor="zip-code">Zip Code</label>
-              <input id="zip-code" type="number" value={postalCode} onChange={(e)=>handleChangePostalCode(e)}/>
-          </div>
+          <label htmlFor="state-button">State</label>
+          <SelectContainer options={states} onChange={(e)=>{handleChangeState(e)}}/>
+          
+          <label htmlFor="zip-code">Zip Code</label>
+          <input id="zip-code" type="number" value={postalCode} onChange={(e)=>handleChangePostalCode(e)}/>
+        </div>
 
-          <label htmlFor="department-button">Department</label>
-          <SelectContainer options={departments} onChange={(e)=>{handleChangeDepartment(e)}}/>
+        <label htmlFor="department-button">Department</label>
+        <SelectContainer options={departments} onChange={(e)=>{handleChangeDepartment(e)}}/>
 
-          <div className='button__container'>
-              <button type='submit' onClick={(e)=>{handleFormSubmit(e)}}>Save</button>
-          </div>
+        <div className='button__container'>
+          <button type='submit' onClick={(e)=>{handleFormSubmit(e)}}>Save</button>
+        </div>
       </form>
+      
       {isFormSubmit ? <Modal openModal={setIsFormSubmit}/> : <></>}
     </>
   )

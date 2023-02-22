@@ -7,9 +7,9 @@ import './employeList.css'
 export default function EmployeList() {
   return (
     <div className='employeeList'>
-        <h1>Current Employees</h1>
-        <Link to="/" className='home-link'>Home page</Link>
-        <GridTableContainer/>
+      <h1>Current Employees</h1>
+      <Link to="/" className='home-link'>Home page</Link>
+      <GridTableContainer/>
     </div>
   )
 }
