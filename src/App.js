@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route index path="/" element={<Home/>}/>
+        <Route path="/AxelSalenbier_14_01112022/" element={<Home/>}/>
         <Route path="/employee-list" element={<EmployeList/>}/>
       </Routes>
     </div>
