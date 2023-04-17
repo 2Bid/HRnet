@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/AxelSalenbier_14_01112022/static/css/main.a06bf703.css",
+    "main.js": "/AxelSalenbier_14_01112022/static/js/main.50aa2bed.js",
+    "static/js/787.b7660d0f.chunk.js": "/AxelSalenbier_14_01112022/static/js/787.b7660d0f.chunk.js",
+    "index.html": "/AxelSalenbier_14_01112022/index.html",
+    "main.a06bf703.css.map": "/AxelSalenbier_14_01112022/static/css/main.a06bf703.css.map",
+    "main.50aa2bed.js.map": "/AxelSalenbier_14_01112022/static/js/main.50aa2bed.js.map",
+    "787.b7660d0f.chunk.js.map": "/AxelSalenbier_14_01112022/static/js/787.b7660d0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a06bf703.css",
+    "static/js/main.50aa2bed.js"
+  ]
+}
